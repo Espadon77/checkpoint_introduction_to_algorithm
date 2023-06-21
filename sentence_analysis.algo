@@ -1,0 +1,25 @@
+ALGORITHM sentence_analysis
+VAR
+    length = 0
+    wordCount = 0 
+    vowelCount = 0
+    inpuString
+    Read inputString
+BEGIN
+     FOR i = 0 to (length of inputString - 1) THEN  // Iterate through each character
+    character = inputString[i]
+
+      IF (character=="e"|| character=="a"|| character=="i"|| character=="o"|| character=="u")
+        vowelCount = vowelCount + 1  // Increment the vowel counter
+      END_IF
+      IF (character=== " ") THEN
+        wordCount = wordCount + 1  // Increment the word counter
+      END_IF
+      END_FOR
+
+    Write "Length of the sentence: " + length
+    Write "Number of words in the sentence: " + wordCount
+    Write "Number of vowels in the sentence: " + vowelCount
+END
+
+
